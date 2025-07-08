@@ -5,75 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Druk Heirloom</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="code.js"></script>
 </head>
 <body>
-    <section class=" border text-center mx-6 my-7 border-[#4D99AA] ">
-        <div class="flex ">
-            <div class="w-400 flex justify-center"><img class="p-4 h-70 w-90 mt-2 "src="../assets/Druk.png"></div>
-            <div class="w-500 bg-[#B3BFC7] mt-3 mb-3 mr-3 shadow-lg rounded-2xl border border-4 border-[#4D99AA] text-left content-center p-4 ">
-                <h1 class="font-bold mb-10 ">DrukHeirloom</h1>
-                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                 Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                 A small river named Duden flows by their place and supplies it with the necessary regelialia. 
-                 It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+    <section class="h-3/6 bg-[#032A33]">
+        <header class="w-4/5 py-15 mx-auto flex items-center justify-between">
+            <div><h2 class="text-4xl font-bold text-white">DruHeirloom</h2></div>
+            <nav class="flex gap-10">
+                <div><a class="text-2xl font-semibold text-white" href="./home.html">Home</a></div>
+                <div><a class="text-2xl font-semibold text-white" href="./about.html">About</a></div>
+                <div><a class="text-2xl font-semibold text-white" href="./heritage.html">Heritage</a></div>
+                <div><a class="text-2xl font-semibold text-white" href="./quiz.html">Quiz</a></div>
+            </nav>
+        </header>
+
+        <div class="w-9/12 h-full py-40 mx-auto text-center">
+            <h1 class="text-4xl font-bold leading-17 text-white">About Us</h1>
+        </div>
+    </section>
+
+    <section class="py-20 text-center">
+        <div class="w-9/12 mx-auto border border-3 border-[#4D99AA] flex content-center p-5">
+            <div class="w-2/5 flex justify-center">
+                <img class="" src="../assets/Druk.png">
+            </div>
+            <div class="bg-[#B3BFC7] w-3/5 rounded-3xl border border-3 border-[#4D99AA] text-left content-center p-5">
+                <h2 class="text-3xl text-[#032A33] font-bold">DrukHeirloom</h2>
+                <p class="text-xl font-medium leading-normal text-[#032A33]">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the 
+                    blind texts.Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic 
+                    country, in which roasted parts of sentences fly into your mouth. A small river named Duden flows by their place 
+                    and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences 
+                    fly into your mouth.
+                </p>
             </div>
         </div>
     </section>
    
-    <section class="bg-[#4D99AA] h-110 " >
-        <h2 class="text-center text-white underline font-extrabold pt-5">Our</h2>
-        <div class="border border-3 border-white p-2 rounded-lg mb-5 mt-3 mr-14 ml-14">
-             <h1 class="font-extrabold text-white">Mission</h1>
-             The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
-             Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz.
-             Brick quiz whangs jumpy veldt fox.
-        </div>
-        <div class="border border-3 border-white p-2 rounded-lg mb-5 mt-3 mr-14 ml-14">
-            <h2 class="font-extrabold text-white">Vision</h2>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-        </div>
-        <div class="border border-3 border-white p-2 rounded-lg mb-5 mt-3 mr-14 ml-14 ">
-            <h3 class="font-extrabold text-white">Vision</h3>
-             The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
-             Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. 
-             Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. 
-             Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack.
+    <section class="bg-[#4D99AA] py-20">
+        <div class="w-9/12 mx-auto flex flex-col gap-5">
+            <div class="border border-3 border-white p-5 rounded-lg">
+                <h2 class="text-3xl font-bold text-white py-2">Mission</h2>
+                <p class="text-xl font-medium text-white leading-normal">
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
+                    Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. 
+                    Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. 
+                    Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack.
+                </p>
+            </div>
+            <div class="border border-3 border-white p-5 rounded-lg">
+                <h2 class="text-3xl font-bold text-white py-2">Vision</h2>
+                <p class="text-xl font-medium text-white leading-normal">
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
+                    Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. 
+                    Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. 
+                    Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack.
+                </p>
+            </div>
+            <div class="border border-3 border-white p-5 rounded-lg">
+                <h3 class="text-3xl font-bold text-white py-2">Vision</h3>
+                <p class="text-xl font-medium text-white leading-normal">
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
+                    Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. 
+                    Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. 
+                    Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack.
+                </p>
+            </div>
         </div>
     </section>
     
-    <section>
-        <h4 class="text-black text-center underline font-bold">Our Team</h4>
-        <div class="grid grid-cols-3">
-            <div class="w-60 h-90 bg-black rounded-lg  mt-2 text-white p-4 mx-50">
-                <img class="rounded-full h-25 mx-auto"src="../assets/woman.jpg" alt="Profile picture">
-                <h1 class="uppercase font-bold text-center mt-2 text-white">Dema</h1>
-                <h2 class="font-bold mt-4 text-white text-center">Developer</h2>
-                <hr class="w-20 mx-auto h-1 bg-white border-none">
-
-                She is Miss Dema and she working under Government of Bhutan. She a good girl with cute smile and also gorgeous beauty. Her main work is to do code and debudding the code.
-            </div>
-            <div class="w-60 h-90 bg-black rounded-lg mx-auto pt-2 mt-2 text-white p-2">
-                <img class="rounded-full h-25 mx-auto "src="../assets/man.jpg" alt="Profile picture">
-                <h5 class="uppercase font-bold text-center mt-2 text-white">Dawa</h5>
-                <h6 class="font-bold mt-4 text-white text-center">Designer</h6>
-                <hr class="w-20 mx-auto h-1 bg-white border-none">
-
-                He is Dawa and he is person with a many cool things. As of now he is working as designer in city and under him there are so many other colleagues working.
-            </div>
-            <div class="w-60 h-90 bg-black rounded-lg  mt-2 text-white p-2">
-                <img class="rounded-full h-25 mx-auto"src="../assets/woman.jpg"alt="Profile picture">
-                <h3 class="uppercase font-bold text-center mt-2 text-white">Phuntsho</h3>
-                <h4 class="font-bold mt-4 text-white text-center">UX Designer </h4>
-                <hr class="w-20 mx-auto h-1 bg-white border-none">
-
-                She is Madam Phuntsho and she work under Private Company. She is a hard working woman and have a capability to do any work in any time. She lead a huge number people in the company.
+    <section class="py-20">
+        <h2 class="text-3xl text-center font-bold text-[#032A33]">Our Team</h2>
+        <div class="w-3/5 mx-auto my-10">
+            <div class="grid grid-cols-3 items-center">
+                <div class="w-4/5 mx-auto h-fit rounded-lg shadow-[0px_5px_10px_5px_rgba(0,_0,_0,_0.1)] p-5">
+                    <img class="rounded-full mx-auto w-25" src="../assets/woman.jpg" alt="Profile picture">
+                    <h2 class="uppercase text-xl font-bold text-center text-[#032A33] mt-5">Dema</h2>
+                    <h2 class="text-xl font-bold mt-2 text-center text-[#032A33]">Developer</h2>
+                    <p class="text-lg text-center text-[#032A33]">
+                        She is Miss Dema and she working under Government of Bhutan. She a good girl with cute smile 
+                        and also gorgeous beauty. Her main work is to do code and debudding the code.
+                    </p>
+                </div>
+                <div class="bg-[#032A33] w-auto mx-auto h-fit rounded-lg shadow-[0px_5px_10px_5px_rgba(0,_0,_0,_0.1)] text-white py-15 px-5">
+                    <img class="rounded-full mx-auto w-25" src="../assets/man.jpg" alt="Profile picture">
+                    <h2 class="uppercase text-xl font-bold text-center mt-5 text-white">Dawa</h2>
+                    <h2 class="text-xl font-bold mt-2 text-center text-white">Designer</h2>
+                    <p class="text-lg text-center">
+                        She is Miss Dema and she working under Government of Bhutan. She a good girl with cute smile 
+                        and also gorgeous beauty. Her main work is to do code and debudding the code.
+                    </p>
+                </div>
+                <div class="w-4/5 mx-auto h-fit rounded-lg shadow-[0px_5px_10px_5px_rgba(0,_0,_0,_0.1)] p-5">
+                    <img class="rounded-full mx-auto w-25" src="../assets/woman.jpg"alt="Profile picture">
+                    <h2 class="uppercase text-xl font-bold text-center text-[#032A33] mt-5">Phuntsho</h2>
+                    <h2 class="text-xl font-bold mt-2 text-center text-[#032A33]">UX Designer </h2>
+                    <p class="text-lg text-center text-[#032A33]">
+                        She is Miss Dema and she working under Government of Bhutan. She a good girl with cute smile 
+                        and also gorgeous beauty. Her main work is to do code and debudding the code.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-
-
+    <footer>
+        <div class="mx-auto w-6/12 text-center py-20">
+            <h2 class="text-3xl font-semibold text-[#4D99AA] py-1">SUBSCRIBE</h2>
+            <h2 class="text-4xl font-bold text-[#032A33] py-1">Subscribe to get the lattest <br> News About Us</h2>
+            <p class="text-2xl font-semibold text-[#d4d4d4] py-1">Please Drop Your Email Below to Get daily Update About <br> What We Do</p>
+            <div class="w-9/12 rounded rounded-4xl border border-2 border-[#4D99AA] flex content-center justify-between mx-auto mt-5 py-2 px-4">
+                <input type="email" placeholder="Enter Your Email Address">
+                <button class="bg-[#4D99AA] text-white rounded rounded-4xl px-10 py-3">SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="bg-[#032A33]">
+            <div class="w-4/5 mx-auto grid grid-cols-3 py-20">
+                <div class="text-white w-full mx-auto">
+                <h2 class="text-3xl font-bold">DruHeirloom</h2>
+                <p class="text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc 
+                    ante velit vitae. Est tellus vitae, nullam lobortis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                </div>
+                <div class="text-white mx-auto">
+                    <h2 class="text-2xl font-bold">DruHeirloom</h2>
+                    <ul class="text-center">
+                        <li class="text-xl font-bold py-3"><a href="">Home</a></li>
+                        <li class="text-xl font-bold py-3"><a href="">About</a></li>
+                        <li class="text-xl font-bold py-3"><a href="">Heritage</a></li>
+                        <li class="text-xl font-bold py-3"><a href="">HomeQuiz</a></li>
+                    </ul>
+                </div>
+                <div class="bg-white w-fit h-fit mx-auto">
+                    <img class="mx-auto" src="../assets/DrukHeirloomLogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 </body> 
 </html
