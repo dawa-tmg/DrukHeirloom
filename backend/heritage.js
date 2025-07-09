@@ -58,22 +58,22 @@ module.exports = [
   },
   {
     name: "Bhutan's National Game Archery",
-    image: "../../assets/archery.jpg",
+    image: "../../assets/archery.jpeg",
     description: "Archery in Bhutan is culturally distinctive because it is a martial art practiced among a modern population that abhors killing.[3] Bhutanese people from different social strata find archery one of the most enjoyable sports, being both fun and physical exercise. In addition, archery builds concentration, which contributes to mental development; according to a Bhutanese proverb, both sailing and archery require intelligence. Archery in Bhutan is a way of socialization, communication, and development of relations between people. Emotions run high during competitions, and support for archers and ridicule or distraction of opponents can become as violent as in other countries' sporting events. "
   },
   {
     name: "Bhutanese Traditional Dances",
-    image: "../../assets/nationalDance.jpg",
+    image: "../../assets/nationalDance.jpeg",
     description: "Bhutanese traditional dances are a vibrant expression of the nation's rich culture and spiritual beliefs, often performed during festivals like Tshechus. These dances, including Cham dances (masked dances), Zhungdra, and Boedra, are deeply rooted in Buddhist teachings and folklore, narrating stories of deities, heroes, and historical events. "
   },
   {
     name: "Tibetan Buddhist Painting ",
-    image: "../../assets/thangka-B.jpg",
+    image: "../../assets/thangka-B.jpeg",
     description: "A thangka could depict a deity, a mandala (geometric figure with symbolic meaning that is also used as an aid in meditation), or a spiritually significant event from the life of a Buddhist master. While thangkas are now also painted for sale, they are integral to practiced Buddhism."
   },
   {
     name: "Wood Carving",
-    image: "../../assets/woodCarvingBhutanes.jpeg",
+    image: "../../assets/woodCarvingBhutanese.jpg",
     description: "Wood carving (or woodcarving) is a form of woodworking by means of a cutting tool (knife) in one hand or a chisel by two hands or with one hand on a chisel and one hand on a mallet, resulting in a wooden figure or figurine, or in the sculptural ornamentation of a wooden object. The phrase may also refer to the finished product, from individual sculptures to hand-worked mouldings composing part of a tracery. "
   }
 ];
