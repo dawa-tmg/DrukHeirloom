@@ -21,18 +21,18 @@ module.exports = [
   },
   {
     name:"Trashi chhoe Dzong",
-    image:"../../assets/Trashi cho dzong.jpg",
+    image:"../../assets/TrashiChoDzong.jpg",
     description:"This splendid dzong, north of the city on the west bank of the Wang Chhu, dominates the valley, looking out over a cascade of terraced fields. It's Thimphu's grandest building by far, and served as the official seat of the Druk Desi, the head of the secular government that shared power with the religious authorities, from the 18th to the 19th centuries. The dzong was the site of the lavish formal coronation of the fifth king in 2008.The building you see today is actually not the original Thimphu dzong. The first fortress – the Dho-Ngen Dzong (Blue Stone Dzong) – was erected in 1216 on the hillside where Dechen Phodrang now stands, and it was adopted as the seat of Lama Phajo Drukgom Shigpo, who brought the Drukpa Kagyu lineage to Bhutan. The fort was renamed Trashi Chho Dzong (Fortress of the Glorious Religion) when it passed from the descendants of Lama Phajo to Zhabdrung Ngawang Namgyal in 1641.",
   },
   {
     name:"Wangdue Phodrang Dzong",
-    image:"../../assets/Wangdue Phodrang.jpg",
+    image:"../../assets/WangduePhodrang.jpg",
     description:"Wangdue Phodrang Dzong, also known as Wangdi, is a historic fortress located in central Bhutan, founded in 1638 by Zhabdrung Ngawang Namgyal. It served as a crucial administrative and religious center and was strategically chosen for its commanding view of the valleys below. The dzong is known for its role in unifying western, central, and southern Bhutan and protecting against southern invasions. It has faced significant damage from fires and earthquakes throughout its history, including a major fire in 2012 that destroyed much of the structure. Currently, it is undergoing reconstruction using traditional methods and materials.  ",
 
   },
   {
     name:"Trashigang Dzong",
-    image:"../../assets/Trashigang Dzong.jpg",
+    image:"../../assets/TrashigangDzong.jpg",
     description:"Trashigang is a town in eastern Bhutan and the district capital of the Trashigang Dzongkhag. The town lies to the east side of the valley above the Drangme Chhu river just south of where it is joined by the Gamri River.",
 
   },
