@@ -1,9 +1,9 @@
 const featureCardContainerClass = 'h-fit w-fit border border-2 border-[#4D99AA] rounded-lg'
 const featureImageClass = 'bg-[#4D99AA] h-60'
-const featureCardClass = 'h-fit p-3'
+const featureCardClass = 'h-fit p-3 min-h-70'
 const featureTitleClass = 'text-xl text-[#032A33] font-semibold'
-const featureTextClass = 'text-lg text-[#032A33]'
-const btnclass = 'border border-1 rounded px-3 mt-3 text-lg text-[#032A33]'
+const featureTextClass = 'text-lg text-[#032A33] truncate-multiline'
+const btnclass = 'border border-1 rounded px-3 mt-3 text-lg text-[#032A33] seeMoreBtn'
 
 const featured = document.getElementById('featured')
 
@@ -51,3 +51,19 @@ axios
       renderImage(elem.name, elem.image, elem.description)
     })
   })
+
+featured.addEventListener('click', (event) => {
+  if (event.target.classList.contains('seeMoreBtn')) {
+    const card = event.target.closest('.h-fit.p-3');
+    const textElement = card.querySelector('p');
+
+    if (textElement.classList.contains('truncate-multiline')) {
+      textElement.classList.remove('truncate-multiline');
+      event.target.innerText = 'See Less <<<';
+    } else {
+      textElement.classList.add('truncate-multiline');
+      event.target.innerText = 'See More >>>';
+    }
+  }
+});
+
