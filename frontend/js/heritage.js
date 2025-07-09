@@ -41,17 +41,6 @@ function renderImage(title, image, text){
 
 }
 
-
-
-axios
-  .get("http://localhost:3001/heritage")
-  .then((response) => {
-    console.log(response)
-    response.data.forEach((elem)=>{
-      renderImage(elem.name, elem.image, elem.description)
-    })
-  })
-
 featured.addEventListener('click', (event) => {
   if (event.target.classList.contains('seeMoreBtn')) {
     const card = event.target.closest('.h-fit.p-3');
@@ -66,4 +55,13 @@ featured.addEventListener('click', (event) => {
     }
   }
 });
+
+axios
+  .get("http://localhost:3001/heritage")
+  .then((response) => {
+    console.log(response)
+    response.data.forEach((elem)=>{
+      renderImage(elem.name, elem.image, elem.description)
+    })
+  })
 
