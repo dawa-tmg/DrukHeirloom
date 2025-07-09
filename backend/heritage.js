@@ -6,7 +6,7 @@ module.exports = [
   },
   {
     name: "Something about Heritage",
-    image: "../../assets/Dzong.jpg",
+    image: "../../assets/lhakang.jpg",
     description: "Bhutan is a small, landlocked kingdom nestled in the eastern Himalayas between India and China. Known for its breathtaking landscapes, rich culture, and deep spiritual heritage, Bhutan is often called the 'Land of the Thunder Dragon.'"
   },
   {
