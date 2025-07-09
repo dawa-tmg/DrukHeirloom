@@ -7,12 +7,15 @@ const btnclass = 'border border-1 rounded px-3 mt-3 text-lg text-[#032A33]'
 
 const featured = document.getElementById('featured')
 
-function renderImage(title, text){
+function renderImage(title, image, text){
   const featureCardContainer = document.createElement('div')
   featureCardContainer.setAttribute('class', featureCardContainerClass)
 
   const featureImage = document.createElement('div')
   featureImage.setAttribute('class', featureImageClass)
+  featureImage.style.backgroundImage = `url('${image}')`
+  featureImage.style.backgroundRepeat = 'no-repeat'
+  featureImage.style.backgroundSize = 'cover'
   featureCardContainer.appendChild(featureImage)
 
   const featureCard = document.createElement('div')
@@ -45,6 +48,6 @@ axios
   .then((response) => {
     console.log(response)
     response.data.forEach((elem)=>{
-      renderImage(elem.name, elem.description)
+      renderImage(elem.name, elem.image, elem.description)
     })
   })
