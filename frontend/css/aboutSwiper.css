@@ -1,0 +1,17 @@
+.swiper {
+    margin: 100px auto;
+    width: 1000px;
+    height: 400px;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: #B3BFC7;
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: #4D99AA;
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: #B3BFC7;
+}

@@ -6,16 +6,9 @@
     <title>Druk Heirloom</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <!-- Link Swiper's CSS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <style>
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-
-    <script defer src="code.js"></script>
+    <link rel="stylesheet" href="../css/homeSwiper.css">
 </head>
 <body>
     <section class="h-screen bg-[#032A33]">
@@ -40,7 +33,7 @@
             <button class="bg-[#4D99AA] text-lg text-white px-5 py-3 rounded rounded-lg py-3">Explore Heritage</button>
         </div>
     </section>
-    <section class="swiper mySwiper bg-gray-200">
+    <section class="swiper homeSwiper bg-gray-200">
         <div class="swiper-wrapper w-full grid grid-cols-2 my-15">
             <div class="swiper-slide bg-[#032A33] p-10">
                 <div class="flex flex-col justify-center">
@@ -191,21 +184,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 0,
-             loop: true,
-            autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
+    <script src="../js/swiper.js"></script>
 </body>
 </html>
