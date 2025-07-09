@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require('cors');
-const quizz = require("./quiz");
+const quiz = require("./quiz");
+const heritage = require("./heritage");
 const app = express();
 const port = 3001;
 
@@ -10,7 +11,11 @@ app.use(express.json());
 
 //READ
 app.get("/quiz", (req, res) => {
-    res.send(quizz);
+    res.send(quiz);
+});
+
+app.get("/heritage", (req, res) => {
+    res.send(heritage);
 });
 
 
