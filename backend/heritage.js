@@ -75,5 +75,21 @@ module.exports = [
     name: "Wood Carving",
     image: "../../assets/woodCarvingBhutanese.jpg",
     description: "Wood carving (or woodcarving) is a form of woodworking by means of a cutting tool (knife) in one hand or a chisel by two hands or with one hand on a chisel and one hand on a mallet, resulting in a wooden figure or figurine, or in the sculptural ornamentation of a wooden object. The phrase may also refer to the finished product, from individual sculptures to hand-worked mouldings composing part of a tracery. "
+  },
+  {
+    name: "Palang(The wooden wine conatiner)",
+    image: "../../assets/Palang.jpeg",
+    description: "A Palang is a traditional handmade container used to store Ara a locally brewed wine. Also known as Jandom, this age-old craft is made from wood. It is covered with braided strips and pierced with two holes on the top. The wooden wine contanier is a common craft in eastern Bhutan communities. Offering Ara to a guest or realtives from a Jandom is consiered a source of pride and shows respect for the occasion. This tradition is valued even today. and it holds a special place in almost every home. I can even serve as home decorative piece, giving your room a conventional appeal. "
+  },
+  {
+    name: "Kishuthara",
+    image: "../../assets/kishuthara.jpeg",
+    description: "Kishuthara is a type of kira, the traditional dress for Bhutanese women, known for its intricate and vibrant silk patterns. It is specifically woven in Khoma village, Lhuentse, by women using an extra-weft technique called thrima. Kishuthara is highly prized and considered a valuable heirloom, often passed down through generations. "
+  },
+  {
+    name: "Bhutanese Jewellery",
+    image: "../../assets/jewellery.jpeg",
+    description: "Bhutanese jewellery reflects the country’s rich cultural heritage and deep spiritual traditions. Traditionally handcrafted, it often features intricate designs inspired by Buddhist symbols, such as the dorji (vajra), lotus, and endless knot. Gold, silver, turquoise, coral, and other semi-precious stones are commonly used materials, believed to carry protective and healing powers.Jewellery in Bhutan is more than mere ornamentation—it is a symbol of status, belief, and identity. Women often wear earrings, necklaces (known as phiru), bangles, and brooches, especially during festivals and religious ceremonies. Men may wear rings or small amulets for spiritual protection Passed down through generations, these heirlooms are treasured as family assets and sacred objects, embodying both artistry and spiritual meaning in Bhutanese society "
   }
+
 ];
