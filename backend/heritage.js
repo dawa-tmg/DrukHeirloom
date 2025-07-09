@@ -52,8 +52,8 @@ module.exports = [
     description: "Buddha Point (Kuensel Phodrang) is one of the most iconic landmarks in Thimphu, Bhutan. It features a massive statue of Buddha Dordenma, which is one of the largest Buddha statues in the world."
   },
   {
-    name: "Musk Dance",
-    image: "../../assets/maskDance.jpg",
+    name: "Mask Dance",
+    image: "../../assets/maskDance.jpeg",
     description: "Mask dance, also known as Cham dance in some contexts, is a vibrant and significant aspect of Bhutanese culture, particularly during religious festivals like Tshechu. These dances involve performers wearing intricate masks representing deities, demons, animals, and historical figures, and they are not merely for entertainment but serve as deep religious rituals. The dances are accompanied by music, chanting, and symbolic movements, creating a meditative atmosphere and conveying Buddhist teachings on karma, compassion, and enlightenment. '"
   },
   {
