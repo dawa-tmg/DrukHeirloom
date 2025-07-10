@@ -6,22 +6,25 @@
     <title>Druk Heirloom</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script defer src="code.js"></script>
+     <!-- Link Swiper's CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/aboutSwiper.css">
 </head>
 <body>
-    <section class="h-3/6 bg-[#032A33]">
-        <header class="w-4/5 py-15 mx-auto flex items-center justify-between">
-            <div><h2 class="text-4xl font-bold text-white">DruHeirloom</h2></div>
+    <section class="h-[70vh] bg-[url(../../assets/About-Us.jpg)] bg-cover bg-center bg-no-repeat relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.7)]">
+            <header class="w-4/5 py-15 mx-auto flex items-center justify-between z-10">
+            <div><h2 class="text-4xl font-bold text-white">DrukHeirloom</h2></div>
             <nav class="flex gap-10">
                 <div><a class="text-2xl font-semibold text-white" href="./home.html">Home</a></div>
                 <div><a class="text-2xl font-semibold text-white" href="./about.html">About</a></div>
                 <div><a class="text-2xl font-semibold text-white" href="./heritage.html">Heritage</a></div>
                 <div><a class="text-2xl font-semibold text-white" href="./quiz.html">Quiz</a></div>
             </nav>
-        </header>
-
-        <div class="w-9/12 h-full py-40 mx-auto text-center">
-            <h1 class="text-4xl font-bold leading-17 text-white">About Us</h1>
+            </header>
+            <div class="w-full py-40 mx-auto text-center">
+                <h2 class="w-full text-5xl font-bold leading-17 text-white">About Us</h2>
+            </div>
         </div>
     </section>
 
@@ -78,6 +81,7 @@
     
     <section class="py-20">
         <h2 class="text-3xl text-center font-bold text-[#032A33]">Our Team</h2>
+
         <div class="w-3/5 mx-auto my-10">
             <div class="grid grid-cols-3 items-center">
                 <div class="w-4/5 mx-auto h-fit rounded-lg shadow-[0px_5px_10px_5px_rgba(0,_0,_0,_0.1)] p-5">
@@ -113,6 +117,44 @@
                         Currently, I am building my skills in full-stack web development, and one of my key projects is Druk Heirloom—a web-based tribute to Bhutanese heritage and typography. 
                         This project reflects my desire to combine creativity with cultural identity and technical skill.
                         From my professional journey, I have learned one important lesson: the ability to do things independently is powerful. My goal is to grow into someone who can confidently solve problems and build meaningful digital experiences without relying on others.
+
+        <div class="swiper teamSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide w-4/5 mx-auto h-fit rounded-lg shadow-[0px_5px_10px_5px_rgba(0,_0,_0,_0.1)] p-5">
+                    <img class="rounded-full mx-auto w-25" src="../../assets/woman.jpg" alt="Profile picture">
+                    <h2 class="uppercase text-xl font-bold text-center text-white mt-5">Dema</h2>
+                    <h2 class="text-2xl font-bold my-2 text-center text-white">Developer</h2>
+                    <p class="text-xl font-semibold text-center text-white">
+                        She is Miss Dema and she working under Government of Bhutan. She a good girl with cute smile 
+                        and also gorgeous beauty. Her main work is to do code and debudding the code.
+                    </p>
+                </div>
+                <div class="swiper-slide w-4/5 mx-auto h-fit rounded-lg shadow-[0px_5px_10px_5px_rgba(0,_0,_0,_0.1)] p-5">
+                    <img class="rounded-full mx-auto w-25" src="../../assets/man.jpg" alt="Profile picture">
+                    <h2 class="uppercase text-xl font-bold text-center mt-5 text-white">Dawa</h2>
+                    <h2 class="text-2xl font-bold my-2 text-center text-white">Designer</h2>
+                    <p class="text-xl font-semibold text-center text-white">
+                        She is Miss Dema and she working under Government of Bhutan. She a good girl with cute smile 
+                        and also gorgeous beauty. Her main work is to do code and debudding the code.
+                    </p>
+                </div>
+                <div class="swiper-slide w-4/5 mx-auto h-fit rounded-lg shadow-[0px_5px_10px_5px_rgba(0,_0,_0,_0.1)] p-5">
+                    <img class="rounded-full mx-auto w-25" src="../../assets/woman.jpg"alt="Profile picture">
+                    <h2 class="uppercase text-xl font-bold text-center text-white mt-5">Phuntsho</h2>
+                    <h2 class="text-2xl font-bold my-2 text-center text-white">UX Designer </h2>
+                    <p class="text-xl font-semibold text-center text-white">
+                        She is Miss Dema and she working under Government of Bhutan. She a good girl with cute smile 
+                        and also gorgeous beauty. Her main work is to do code and debudding the code.
+                    </p>
+                </div>
+                <div class="swiper-slide w-4/5 mx-auto h-fit rounded-lg shadow-[0px_5px_10px_5px_rgba(0,_0,_0,_0.1)] p-5">
+                    <img class="rounded-full mx-auto w-25" src="../../assets/woman.jpg"alt="Profile picture">
+                    <h2 class="uppercase text-xl font-bold text-center text-white mt-5">Phuntsho</h2>
+                    <h2 class="text-2xl font-bold my-2 text-center text-white">UX Designer </h2>
+                    <p class="text-xl font-semibold text-center text-white">
+                        She is Miss Dema and she working under Government of Bhutan. She a good girl with cute smile 
+                        and also gorgeous beauty. Her main work is to do code and debudding the code.
+
                     </p>
                 </div>
 
@@ -129,21 +171,23 @@
 
             </div>
         </div>
+
     </section>
     <footer>
         <div class="mx-auto w-6/12 text-center py-20">
             <h2 class="text-3xl font-semibold text-[#4D99AA] py-1">SUBSCRIBE</h2>
             <h2 class="text-4xl font-bold text-[#032A33] py-1">Subscribe to get the lattest <br> News About Us</h2>
             <p class="text-2xl font-semibold text-[#d4d4d4] py-1">Please Drop Your Email Below to Get daily Update About <br> What We Do</p>
-            <div class="w-9/12 rounded rounded-4xl border border-2 border-[#4D99AA] flex content-center justify-between mx-auto mt-5 py-2 px-4">
-                <input type="email" placeholder="Enter Your Email Address">
-                <button class="bg-[#4D99AA] text-white rounded rounded-4xl px-10 py-3">SUBSCRIBE</button>
-            </div>
+            <form class="w-9/12 rounded rounded-4xl border border-2 border-[#4D99AA] flex content-center justify-between mx-auto mt-5 py-2 px-4"
+            action="https://formspree.io/f/mzzglwop" method="POST">
+                <input class="focus:outline-none" type="email" name="email" placeholder="Enter Your Email Address" required>
+            <button class="bg-[#4D99AA] text-white rounded rounded-4xl px-10 py-3" type="submit">SUBSCRIBE</button>
+            </form>
         </div>
         <div class="bg-[#032A33]">
             <div class="w-4/5 mx-auto grid grid-cols-3 py-20">
                 <div class="text-white w-full mx-auto">
-                <h2 class="text-3xl font-bold">DruHeirloom</h2>
+                <h2 class="text-3xl font-bold">DrukHeirloom</h2>
                 <p class="text-lg">
                     Druk Heirloom is a digital tribute to Bhutan's rich cultural and artistic heritage.
                     Rooted in the nation's deep reverence for tradition, this project seeks to preserve and promote the unique visual identity of Bhutan through typography. 
@@ -153,12 +197,12 @@
                 </p>
                 </div>
                 <div class="text-white mx-auto">
-                    <h2 class="text-2xl font-bold">DruHeirloom</h2>
+                    <h2 class="text-2xl font-bold">DrukHeirloom</h2>
                     <ul class="text-center">
-                        <li class="text-xl font-bold py-3"><a href="">Home</a></li>
-                        <li class="text-xl font-bold py-3"><a href="">About</a></li>
-                        <li class="text-xl font-bold py-3"><a href="">Heritage</a></li>
-                        <li class="text-xl font-bold py-3"><a href="">HomeQuiz</a></li>
+                        <li class="text-xl font-bold py-3"><a href="./home.html">Home</a></li>
+                        <li class="text-xl font-bold py-3"><a href="./about.html">About</a></li>
+                        <li class="text-xl font-bold py-3"><a href="./heritage.html">Heritage</a></li>
+                        <li class="text-xl font-bold py-3"><a href="./quiz.html">HomeQuiz</a></li>
                     </ul>
                 </div>
                 <div class="bg-white w-fit h-fit mx-auto">
@@ -167,5 +211,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
 </body> 
 </html

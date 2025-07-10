@@ -6,21 +6,23 @@
     <title>Druk Heirloom</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script defer src="code.js"></script>
+     <!-- Link Swiper's CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/homeSwiper.css">
 </head>
 <body>
-    <section class="h-screen bg-[#032A33]">
-        <header class="w-4/5 py-15 mx-auto flex items-center justify-between">
-            <div><h2 class="text-4xl font-bold text-white">DruHeirloom</h2></div>
+    <section class="h-screen bg-[url(../../assets/Home.jpg)] bg-cover bg-center bg-no-repeat relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,.7)]">
+            <header class="w-4/5 py-15 mx-auto flex items-center justify-between z-10">
+            <div><h2 class="text-4xl font-bold text-white">DrukHeirloom</h2></div>
             <nav class="flex gap-10">
                 <div><a class="text-2xl font-semibold text-white" href="./home.html">Home</a></div>
                 <div><a class="text-2xl font-semibold text-white" href="./about.html">About</a></div>
                 <div><a class="text-2xl font-semibold text-white" href="./heritage.html">Heritage</a></div>
                 <div><a class="text-2xl font-semibold text-white" href="./quiz.html">Quiz</a></div>
             </nav>
-        </header>
-
-        <div class="w-9/12 py-40 mx-auto">
+            </header>
+            <div class="w-9/12 py-40 mx-auto">
             <h1 class="w-6/12 text-6xl font-bold leading-17 text-white">Preserving the Legacy of Bhutanese Craftmenship</h1>
             <div class="w-120 py-3">
                 <p class="text-xl leading-8 text-white">
@@ -28,13 +30,13 @@
                     showcasing the intricate artistry of local weavers and craftsmen.
                 </p>
             </div>
-            <button class="bg-[#4D99AA] text-lg text-white px-5 py-3 rounded rounded-lg py-3">Explore Heritage</button>
+                <button class="bg-[#4D99AA] text-lg text-white px-5 py-3 rounded rounded-lg py-3">Explore Heritage</button>
+            </div>
         </div>
     </section>
-
-    <section class="py-20">
-        <div class="grid grid-cols-2">
-            <div class="bg-[#032A33] w-full p-15 grid grid-cols-2">
+    <section class="swiper homeSwiper bg-gray-200">
+        <div class="swiper-wrapper w-full grid grid-cols-2 my-15">
+            <div class="swiper-slide bg-[#032A33] p-10">
                 <div class="flex flex-col justify-center">
                     <h2 class="text-2xl font-semibold text-white">Wooden Bowl</h2>
                     <h2 class="text-2xl font-semibold text-white">local Name : Zabhsi Phob</h2>
@@ -44,17 +46,38 @@
                     <img src="../../assets/Bhutenese-wooden-bowl.png" alt="">
                 </div>
             </div>
-            <div class="bg-[#B3BFC7] w-full p-15 grid grid-cols-2">
+            <div class="swiper-slide bg-[#B3BFC7] p-10">
                 <div class="flex flex-col justify-center">
                     <h2 class="text-2xl font-semibold text-[#032A33]">Wooden Bowl</h2>
                     <h2 class="text-2xl font-semibold text-[#032A33]">local Name : Zabhsi Phob</h2>
-                    <button class="w-6/12 border border-2 rounded text-lg text-[#032A33]p-1 mt-2">Detail -- ></button>
+                    <button class="w-6/12 border border-2 rounded text-lg text-[#032A33] p-1 mt-2">Detail -- ></button>
+                </div>
+                <div class="">
+                    <img src="../../assets/Bhutanese-Wooden-Cup.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide bg-[#032A33] p-10">
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-2xl font-semibold text-white">Wooden Bowl</h2>
+                    <h2 class="text-2xl font-semibold text-white">local Name : Zabhsi Phob</h2>
+                    <button class="w-6/12 border border-2 rounded text-lg text-white p-1 mt-2">Detail -- ></button>
+                </div>
+                <div class="">
+                    <img src="../../assets/Bhutenese-wooden-bowl.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide bg-[#B3BFC7] p-10">
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-2xl font-semibold text-[#032A33]">Wooden Bowl</h2>
+                    <h2 class="text-2xl font-semibold text-[#032A33]">local Name : Zabhsi Phob</h2>
+                    <button class="w-6/12 border border-2 rounded text-lg text-[#032A33] p-1 mt-2">Detail -- ></button>
                 </div>
                 <div class="">
                     <img src="../../assets/Bhutanese-Wooden-Cup.png" alt="">
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
 
     <section class="w-9/12 mx-auto pt-10 pb-20">
@@ -131,15 +154,16 @@
             <h2 class="text-3xl font-semibold text-[#4D99AA] py-1">SUBSCRIBE</h2>
             <h2 class="text-4xl font-bold text-[#032A33] py-1">Subscribe to get the lattest <br> News About Us</h2>
             <p class="text-2xl font-semibold text-[#d4d4d4] py-1">Please Drop Your Email Below to Get daily Update About <br> What We Do</p>
-            <div class="w-9/12 rounded rounded-4xl border border-2 border-[#4D99AA] flex content-center justify-between mx-auto mt-5 py-2 px-4">
-                <input type="email" placeholder="Enter Your Email Address">
-                <button class="bg-[#4D99AA] text-white rounded rounded-4xl px-10 py-3">SUBSCRIBE</button>
-            </div>
+            <form class="w-9/12 rounded rounded-4xl border border-2 border-[#4D99AA] flex content-center justify-between mx-auto mt-5 py-2 px-4"
+            action="https://formspree.io/f/mzzglwop" method="POST">
+                <input class="focus:outline-none" type="email" name="email" placeholder="Enter Your Email Address" required>
+            <button class="bg-[#4D99AA] text-white rounded rounded-4xl px-10 py-3" type="submit">SUBSCRIBE</button>
+            </form>
         </div>
         <div class="bg-[#032A33]">
             <div class="w-4/5 mx-auto grid grid-cols-3 py-20">
                 <div class="text-white w-full mx-auto">
-                <h2 class="text-3xl font-bold">DruHeirloom</h2>
+                <h2 class="text-3xl font-bold">DrukHeirloom</h2>
                 <p class="text-lg">
                     Druk Heirloom is a digital tribute to Bhutan's rich cultural and artistic heritage. 
                     Rooted in the nation's deep reverence for tradition, this project seeks to preserve and promote the unique visual identity of Bhutan through typography. 
@@ -149,12 +173,12 @@
                 </p>
                 </div>
                 <div class="text-white mx-auto">
-                    <h2 class="text-2xl font-bold">DruHeirloom</h2>
+                    <h2 class="text-2xl font-bold">DrukHeirloom</h2>
                     <ul class="text-center">
-                        <li class="text-xl font-bold py-3"><a href="">Home</a></li>
-                        <li class="text-xl font-bold py-3"><a href="">About</a></li>
-                        <li class="text-xl font-bold py-3"><a href="">Heritage</a></li>
-                        <li class="text-xl font-bold py-3"><a href="">HomeQuiz</a></li>
+                        <li class="text-xl font-bold py-3"><a href="./home.html">Home</a></li>
+                        <li class="text-xl font-bold py-3"><a href="./about.html">About</a></li>
+                        <li class="text-xl font-bold py-3"><a href="./heritage.html">Heritage</a></li>
+                        <li class="text-xl font-bold py-3"><a href="./quiz.html">HomeQuiz</a></li>
                     </ul>
                 </div>
                 <div class="bg-white w-fit h-fit mx-auto">
@@ -163,5 +187,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
 </body>
 </html>
